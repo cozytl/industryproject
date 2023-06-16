@@ -16,6 +16,7 @@
   flex-direction: column;
   border: none;
   width: 42px;
+
   &__input {
     width: 50%;
     background-image: url("../../assets/search-24px.svg");
@@ -27,6 +28,7 @@
     height: 40px;
     background-color: aliceblue;
     font-size: 15px;
+    border-radius: 4px;
     &:focus {
       outline: none;
       border: 1px solid $Main-Color;
