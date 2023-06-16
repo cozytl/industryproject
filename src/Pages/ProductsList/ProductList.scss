@@ -1,0 +1,11 @@
+.products-list{
+   width: 63.75rem;
+   margin: 0 auto;
+    
+    &__gallery{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: .5rem;
+    }
+}
