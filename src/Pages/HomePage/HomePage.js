@@ -11,11 +11,13 @@ function HomePage() {
   return (
     <>
       <section className="home-page">
+        <div className="home-page__overlay"></div>
         <div className="home-page__hero-container">
           <h1 className="home-page__title">
             Your Destination for all things Environmentally Friendly.
           </h1>
           <Search />
+
           <h2 className="home-page__subheader">
             Discover the environmental impact of the products you're interested
             in, and we’ll help you find greener alternatives!
