@@ -14,10 +14,10 @@ export default function Search() {
     };
 
     let data = ["aaa", "aab", "aac", "abb", "bbb", "bba", "ccc"];
+
     return (
         <>
             <div>
-                <h2>curr is : {value}</h2>
                 <input
                     type="text"
                     onChange={handleInput}
@@ -27,21 +27,23 @@ export default function Search() {
                 <button onClick={() => onSearch(value)}>search</button>
 
                 <div>
-                    {data.filter((item) => {
-                        const searchTerm = value.toLowerCase();
-                        const arrItem = item.toLowerCase();
+                    {value !== "" &&
+                        data
+                            .filter((item) => {
+                                const searchTerm = value.toLowerCase();
+                                const arrItem = item.toLowerCase();
 
-                        return (
-                            searchTerm &&
-                            arrItem.startsWith(searchTerm) &&
-                            arrItem !== searchTerm
-                        );
-                    })}
-                    {data.map((item) => (
-                        <div onClick={() => onSearch(item)} key={item}>
-                            {item}
-                        </div>
-                    ))}
+                                return (
+                                    searchTerm &&
+                                    arrItem.startsWith(searchTerm) &&
+                                    arrItem !== searchTerm
+                                );
+                            })
+                            .map((item) => (
+                                <div onClick={() => onSearch(item)} key={item}>
+                                    {item}
+                                </div>
+                            ))}
                 </div>
             </div>
         </>
