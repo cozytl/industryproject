@@ -6,20 +6,12 @@ function HomePage() {
     <>
       <div className="home-page">
         <h1 className="home-page__title">
-          Vorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Your Destination for all things Environmentally Friendly.
         </h1>
-        {/* <form className="home-page__search-form">
-          <input
-            className="home-page__search-input"
-            type="search"
-            name="search"
-            placeholder="Search Products"
-          ></input>
-        </form> */}
         <Search />
         <h2 className="home-page__subheader">
-          Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-          vulputate libero et velit interdum, ac aliquet odio mattis.
+          Discover the environmental impact of the products you're interested
+          in, and we’ll help you find greener alternatives!
         </h2>
       </div>
 
