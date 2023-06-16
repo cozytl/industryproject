@@ -1,7 +1,20 @@
 @use "../../Styles/Partials/global";
 
 .category {
-  background-color: grey;
-  width: 100px;
-  height: 100px;
+  margin-left: 2rem;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__container {
+    background-color: grey;
+    width: 150px;
+    height: 150px;
+  }
+
+  &__title {
+    display: inline-block;
+    padding-top: 1rem;
+  }
 }

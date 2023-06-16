@@ -1,5 +1,4 @@
 import "../Pages/HomePage.scss";
-import searchIcon from "../assets/images/icons/search-icon.png";
 import Category from "../components/Category/Category";
 
 function HomePage() {
@@ -16,7 +15,6 @@ function HomePage() {
             name="search"
             placeholder="Search..."
           ></input>
-          <img src={searchIcon} alt="search-icon" />
         </form>
         <h2 className="home-page__subheader">
           Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
