@@ -1,5 +1,4 @@
 import "../Pages/HomePage.scss";
-import Category from "../components/Category/Category";
 
 function HomePage() {
   return (
@@ -13,7 +12,7 @@ function HomePage() {
             className="home-page__search-input"
             type="search"
             name="search"
-            placeholder="Search..."
+            placeholder="Search Products"
           ></input>
         </form>
         <h2 className="home-page__subheader">
@@ -21,7 +20,11 @@ function HomePage() {
           vulputate libero et velit interdum, ac aliquet odio mattis.
         </h2>
       </div>
-      <Category />
+
+      <div className="home-page__category">
+        <div className="home-page__category-container"></div>
+        <h2 className="home-page__category-container">Title</h2>
+      </div>
     </>
   );
 }
