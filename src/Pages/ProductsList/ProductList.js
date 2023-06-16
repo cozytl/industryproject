@@ -22,7 +22,17 @@ return <div>Loading....</div>
 
   return (
     <section className="products-list">
-      <p>Showing Result for "black t-shirts"</p>
+      <div className="products-list__head">
+      <p className="products-list__tag">Showing Result for "black t-shirts"</p>
+      <div className="products-list__filter-container">
+        <span className="products-list__filters-title">Show Filters<ion-icon  name="filter-outline"></ion-icon>
+        </span>
+        <span className="products-list__filters-title">
+            Sort by: 
+            <span className="products-list__filters-title-sub">Eco Rating <ion-icon  name="caret-down-outline"></ion-icon></span>
+        </span>
+      </div>
+      </div>
       <div className="products-list__gallery">
       {products.map((product)=>{
         return <ProductCard product ={product}/>

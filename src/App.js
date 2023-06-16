@@ -1,6 +1,6 @@
 import "./App.scss";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import HomePage from "./Pages/HomePage";
+import HomePage from "./Pages/HomePage/HomePage";
 import Header from "./components/Header/Header";
 import ProductList from "./Pages/ProductsList/ProductList";
 import ProductItem from "./components/ProductItem/ProductItem";
