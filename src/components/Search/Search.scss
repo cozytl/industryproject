@@ -27,6 +27,10 @@
     height: 40px;
     background-color: aliceblue;
     font-size: 15px;
+    &:focus {
+      outline: none;
+      border: 1px solid $Main-Color;
+    }
   }
   &__suggestion {
     display: flex;

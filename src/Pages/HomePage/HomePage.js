@@ -26,42 +26,66 @@ function HomePage() {
       <section className="home-page__category-section">
         <div className="home-page__container">
           <div className="home-page__category">
-            <img src={Image1} className="home-page__category-container" />
+            <img
+              src={Image1}
+              alt="Apparel Image"
+              className="home-page__category-container"
+            />
           </div>
           <h2 className="home-page__category-title">Apparel</h2>
         </div>
 
         <div className="home-page__container">
           <div className="home-page__category">
-            <img src={Image2} className="home-page__category-container" />
+            <img
+              src={Image2}
+              alt="Technology Image"
+              className="home-page__category-container"
+            />
           </div>
           <h2 className="home-page__category-title">Technology</h2>
         </div>
 
         <div className="home-page__container">
           <div className="home-page__category">
-            <img src={Image3} className="home-page__category-container" />
+            <img
+              src={Image3}
+              alt="Indoor Image"
+              className="home-page__category-container"
+            />
           </div>
           <h2 className="home-page__category-title">Indoor</h2>
         </div>
 
         <div className="home-page__container">
           <div className="home-page__category">
-            <img src={Image4} className="home-page__category-container" />
+            <img
+              src={Image4}
+              alt="Outdoor Image"
+              className="home-page__category-container"
+            />
           </div>
           <h2 className="home-page__category-title">Outdoor</h2>
         </div>
 
         <div className="home-page__container">
           <div className="home-page__category">
-            <img src={Image5} className="home-page__category-container" />
+            <img
+              src={Image5}
+              alt="Pet Supplies Image"
+              className="home-page__category-container"
+            />
           </div>
           <h2 className="home-page__category-title">Pet Supplies</h2>
         </div>
 
         <div className="home-page__container">
           <div className="home-page__category">
-            <img src={Image6} className="home-page__category-container" />
+            <img
+              src={Image6}
+              alt="FitnessImage"
+              className="home-page__category-container"
+            />
           </div>
           <h2 className="home-page__category-title">Fitness</h2>
         </div>
