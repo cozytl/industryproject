@@ -1,11 +1,11 @@
-import "../Pages/HomePage.scss";
-import Search from "../components/Search/Search";
-import Image1 from "../assets/images/Rectangle44.png";
-import Image2 from "../assets/images/Rectangle45.png";
-import Image3 from "../assets/images/Rectangle47.png";
-import Image4 from "../assets/images/Rectangle46.png";
-import Image5 from "../assets/images/Rectangle48.png";
-import Image6 from "../assets/images/Rectangle43.png";
+import "./HomePage.scss";
+import Search from "../../components/Search/Search";
+import Image1 from "../../assets/images/Rectangle44.png";
+import Image2 from "../../assets/images/Rectangle45.png";
+import Image3 from "../../assets/images/Rectangle47.png";
+import Image4 from "../../assets/images/Rectangle46.png";
+import Image5 from "../../assets/images/Rectangle48.png";
+import Image6 from "../../assets/images/Rectangle43.png";
 
 function HomePage() {
   return (
