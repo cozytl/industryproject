@@ -10,6 +10,7 @@ export default function App() {
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/id" element={<Proppass />} />
         <Route path="/products" element={<ProductList/>}/>
       </Routes>
     </BrowserRouter>
