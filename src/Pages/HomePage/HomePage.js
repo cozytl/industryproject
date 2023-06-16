@@ -10,16 +10,18 @@ import Image6 from "../../assets/images/Rectangle43.png";
 function HomePage() {
   return (
     <>
-      <div className="home-page">
-        <h1 className="home-page__title">
-          Your Destination for all things Environmentally Friendly.
-        </h1>
-        <Search />
-        <h2 className="home-page__subheader">
-          Discover the environmental impact of the products you're interested
-          in, and we’ll help you find greener alternatives!
-        </h2>
-      </div>
+      <section className="home-page">
+        <div className="home-page__hero-container">
+          <h1 className="home-page__title">
+            Your Destination for all things Environmentally Friendly.
+          </h1>
+          <Search />
+          <h2 className="home-page__subheader">
+            Discover the environmental impact of the products you're interested
+            in, and we’ll help you find greener alternatives!
+          </h2>
+        </div>
+      </section>
 
       <section className="home-page__category-section">
         <div className="home-page__container">

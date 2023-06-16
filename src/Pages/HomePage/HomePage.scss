@@ -6,14 +6,17 @@
 .home-page {
   background-image: url(../../assets/images/Vector.png);
   background-size: cover;
-  width: 100%;
   height: 500px;
   margin-bottom: 2rem;
+
+  &__hero-container {
+    max-width: 1020px;
+    margin: 0 auto;
+  }
 
   &__title {
     padding-top: 5rem;
     margin-bottom: 3rem;
-    padding-left: 5rem;
     font-size: 61px;
     color: $Main-Color;
     font-family: font-family;
@@ -38,7 +41,6 @@
   &__subheader {
     width: 50%;
     margin-top: 3rem;
-    padding-left: 5rem;
     font-size: 20px;
     color: white;
     font-family: $font-regular;
@@ -74,5 +76,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    max-width: 1020px;
+    margin: 0 auto;
   }
 }
