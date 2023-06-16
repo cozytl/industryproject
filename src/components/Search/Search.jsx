@@ -1,5 +1,5 @@
-import React from "react";
-import { useState } from "react";
+import "./Search.scss";
+import React, { useState } from "react";
 
 export default function Search() {
     const [value, setValue] = useState("");
@@ -8,44 +8,52 @@ export default function Search() {
         setValue(event.target.value);
     };
 
-    const onSearch = (term) => {
-        setValue(term);
-        console.log("search: ", term);
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        console.log("search: ", value);
     };
 
+    //dummy data
     let data = ["aaa", "aab", "aac", "abb", "bbb", "bba", "ccc"];
 
     return (
-        <>
-            <div>
+        <form className="formyform" onSubmit={handleSubmit}>
+            <div className="searchbar">
                 <input
+                    className="searchbar__input"
                     type="text"
                     onChange={handleInput}
+                    onKeyDown={(event) => {
+                        if (event.key === "Enter") {
+                            handleSubmit(event);
+                        }
+                    }}
                     placeholder="placeholding"
                     value={value}
-                ></input>
-                <button onClick={() => onSearch(value)}>search</button>
+                />
+                {data
+                    .filter((item) => {
+                        const searchTerm = value.toLowerCase();
+                        const arrItem = item.toLowerCase();
 
-                <div>
-                    {value !== "" &&
-                        data
-                            .filter((item) => {
-                                const searchTerm = value.toLowerCase();
-                                const arrItem = item.toLowerCase();
+                        return (
+                            searchTerm &&
+                            arrItem.startsWith(searchTerm) &&
+                            arrItem !== searchTerm
+                        );
+                    })
 
-                                return (
-                                    searchTerm &&
-                                    arrItem.startsWith(searchTerm) &&
-                                    arrItem !== searchTerm
-                                );
-                            })
-                            .map((item) => (
-                                <div onClick={() => onSearch(item)} key={item}>
-                                    {item}
-                                </div>
-                            ))}
-                </div>
+                    .map((item) => (
+                        <div
+                            className="searchbar__suggestion"
+                            onClick={() => setValue(item)}
+                            key={item}
+                            style={{ cursor: "pointer" }}
+                        >
+                            {item}
+                        </div>
+                    ))}
             </div>
-        </>
+        </form>
     );
 }
