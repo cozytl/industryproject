@@ -1,7 +1,7 @@
-@use "../styles/partials/mixins" as *;
-@use "../styles/partials/fonts" as *;
-@use "../styles/partials/global" as *;
-@use "../styles/partials/variables" as *;
+@use "../../Styles/partials/mixins" as *;
+@use "../../Styles/partials/fonts" as *;
+@use "../../Styles/partials/global" as *;
+@use "../../Styles/partials/variables" as *;
 
 .home-page {
   background-color: rgb(163, 163, 163);
@@ -22,7 +22,7 @@
     height: 2.5rem;
     width: 50%;
     border-radius: 0.25rem;
-    background-image: url(../assets/images/icons/search-icon.png);
+    background-image: url("../../assets//images//icons/search-icon.png");
     background-repeat: no-repeat;
     background-size: 20px;
     padding-left: 2.2rem;

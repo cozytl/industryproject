@@ -1,5 +1,5 @@
-import "../Pages/HomePage.scss";
-import Search from "../components/Search/Search";
+import "../HomePage/HomePage.scss";
+import Search from "../../components/Search/Search";
 
 function HomePage() {
   return (
