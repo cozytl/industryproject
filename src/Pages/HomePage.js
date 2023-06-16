@@ -1,4 +1,5 @@
 import "../Pages/HomePage.scss";
+import Search from "../components/Search/Search";
 
 function HomePage() {
   return (
@@ -7,14 +8,15 @@ function HomePage() {
         <h1 className="home-page__title">
           Vorem ipsum dolor sit amet, consectetur adipiscing elit.
         </h1>
-        <form className="home-page__search-form">
+        {/* <form className="home-page__search-form">
           <input
             className="home-page__search-input"
             type="search"
             name="search"
             placeholder="Search Products"
           ></input>
-        </form>
+        </form> */}
+        <Search />
         <h2 className="home-page__subheader">
           Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
           vulputate libero et velit interdum, ac aliquet odio mattis.
