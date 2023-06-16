@@ -14,15 +14,19 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  border: 1px solid black;
+  border: none;
+  width: 42px;
   &__input {
+    width: 50%;
     background-image: url("../../assets/search-24px.svg");
     background-repeat: no-repeat;
-    background-position: bottom 0 left 0;
+    background-position: 10px 10px;
     border: none;
-    padding: 0.25rem 8rem 0.25rem 1.65rem;
-    width: 32rem;
+    padding: 0.5rem 8rem 0.25rem 2.5rem;
+    width: 42rem;
+    height: 40px;
     background-color: aliceblue;
+    font-size: 15px;
   }
   &__suggestion {
     display: flex;

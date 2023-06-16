@@ -27,7 +27,7 @@ export default function Search() {
               handleSubmit(event);
             }
           }}
-          placeholder="placeholding"
+          placeholder="Search Products"
           value={value}
         />
         {data
