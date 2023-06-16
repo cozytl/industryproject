@@ -1,5 +1,11 @@
 import "../Pages/HomePage.scss";
 import Search from "../components/Search/Search";
+import Image1 from "../assets/images/Rectangle44.png";
+import Image2 from "../assets/images/Rectangle45.png";
+import Image3 from "../assets/images/Rectangle47.png";
+import Image4 from "../assets/images/Rectangle46.png";
+import Image5 from "../assets/images/Rectangle48.png";
+import Image6 from "../assets/images/Rectangle43.png";
 
 function HomePage() {
   return (
@@ -15,10 +21,49 @@ function HomePage() {
         </h2>
       </div>
 
-      <div className="home-page__category">
-        <div className="home-page__category-container"></div>
-        <h2 className="home-page__category-title">Title</h2>
-      </div>
+      <section className="home-page__category-section">
+        <div className="home-page__container">
+          <div className="home-page__category-">
+            <img src={Image1} className="home-page__category-container" />
+          </div>
+          <h2 className="home-page__category-title">Apparel</h2>
+        </div>
+
+        <div className="home-page__container">
+          <div className="home-page__category">
+            <img src={Image2} className="home-page__category-container" />
+          </div>
+          <h2 className="home-page__category-title">Technology</h2>
+        </div>
+
+        <div className="home-page__container">
+          <div className="home-page__category">
+            <img src={Image3} className="home-page__category-container" />
+          </div>
+          <h2 className="home-page__category-title">Indoor</h2>
+        </div>
+
+        <div className="home-page__container">
+          <div className="home-page__category">
+            <img src={Image4} className="home-page__category-container" />
+          </div>
+          <h2 className="home-page__category-title">Outdoor</h2>
+        </div>
+
+        <div className="home-page__container">
+          <div className="home-page__category">
+            <img src={Image5} className="home-page__category-container" />
+          </div>
+          <h2 className="home-page__category-title">Pet Supplies</h2>
+        </div>
+
+        <div className="home-page__container">
+          <div className="home-page__category">
+            <img src={Image6} className="home-page__category-container" />
+          </div>
+          <h2 className="home-page__category-title">Fitness</h2>
+        </div>
+      </section>
     </>
   );
 }
