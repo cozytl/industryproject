@@ -1,7 +1,7 @@
-@use "../../Styles/partials/mixins" as *;
-@use "../../Styles/partials/fonts" as *;
-@use "../../Styles/partials/global" as *;
+// @use "../../Styles/partials/fonts" as *;
+// @use "../../Styles/Partials/global" as *;
 @use "../../Styles/partials/variables" as *;
+
 .formyform {
   display: flex;
   justify-content: center;
@@ -16,7 +16,7 @@
   width: 42px;
   &__input {
     width: 50%;
-    background-image: url("../../assets/search-24px.svg");
+    background-image: url("../../assets/images/Vector.png");
     background-repeat: no-repeat;
     background-position: 10px 10px;
     border: none;
