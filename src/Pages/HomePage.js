@@ -23,7 +23,7 @@ function HomePage() {
 
       <section className="home-page__category-section">
         <div className="home-page__container">
-          <div className="home-page__category-">
+          <div className="home-page__category">
             <img src={Image1} className="home-page__category-container" />
           </div>
           <h2 className="home-page__category-title">Apparel</h2>
