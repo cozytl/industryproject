@@ -39,16 +39,16 @@
       border-bottom: 2px solid transparent;
       transition: all 0.3s;
       font-family: $font-medimum;
+      text-decoration: none;
 
       &:hover {
         color: #fff;
         border-color: #fff;
       }
     }
-
-    .active {
-      color: #fff;
-      border-bottom: 2px solid #fff;
-    }
   }
+}
+.active {
+  color: #fff;
+  border-bottom: 2px solid #fff;
 }

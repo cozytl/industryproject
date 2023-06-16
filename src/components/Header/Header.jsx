@@ -1,5 +1,5 @@
 import "./Header.scss";
-
+import { NavLink } from "react-router-dom";
 export default function Header() {
   return (
     <header className="nav">
@@ -7,7 +7,9 @@ export default function Header() {
         <h1 className="nav__logo-image">Ecowise</h1>
 
         <div className="nav__bar">
-          <p className="nav__bar--item active">Home</p>
+          <NavLink to="/" className="nav__bar--item">
+            Home
+          </NavLink>
           <p className="nav__bar--item">About</p>
           <p className="nav__bar--item">Contact</p>
           <p className="nav__bar--item">Profile</p>

@@ -44,9 +44,18 @@ export default function ProductItem() {
             <h3 className="prod__price">{item.price_range}</h3>
             <div className="prod__brands">
               <p>Available on</p>
-              <img className="prod__avail" src={icon2}></img>
-              <img className="prod__avail" src={icon3}></img>
-              <img className="prod__avail" src={icon1}></img>
+              <div className="prod__flex-container">
+                <div className="prod__avail-container">
+                  <img className="prod__avail" src={icon2}></img>
+                </div>
+                <div className="prod__avail-container">
+                  <img className="prod__avail" src={icon3}></img>
+                </div>
+
+                <div className="prod__avail-container">
+                  <img className="prod__avail" src={icon1}></img>
+                </div>
+              </div>
             </div>
           </div>
           <div className="prod__similar">

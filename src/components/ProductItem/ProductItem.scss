@@ -14,7 +14,9 @@ body,
   flex-wrap: nowrap;
   justify-content: space-between;
   padding: 0 0 1rem 0;
-
+  &__details {
+    color: rgb(22, 22, 22);
+  }
   &__img {
     //cont
 
@@ -46,13 +48,21 @@ body,
     font-size: 1.5rem;
     font-weight: 400;
   }
-  &__avail {
+  &__avail-container {
     margin: 1rem 1rem 0 0;
-    width: 3rem;
-    height: 3rem;
+    width: 4rem;
+    height: 4rem;
     font-weight: 700;
-
+    background-color: grey;
     border-radius: 50%;
+    padding: 1rem;
+  }
+
+  &__flex-container {
+    display: flex;
+    gap: 1rem;
+  }
+  &__avail {
   }
 
   &__similar {
@@ -64,7 +74,10 @@ body,
   }
   &__sdetails {
     flex-wrap: nowrap;
-    font-size: 0.75rem;
+    font-size: 0.9rem;
+    font-weight: lighter;
+    margin-bottom: 1rem;
+    color: rgb(22, 22, 22);
   }
   &__simg {
     padding: 0;
