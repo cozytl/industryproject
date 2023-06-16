@@ -20,7 +20,17 @@
     z-index: 1;
     opacity: 0.2;
   }
+  &__category {
+    overflow: hidden;
+  }
 
+  &__category-container {
+    cursor: pointer;
+    transition: all 0.4s;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
   &__hero-container {
     max-width: 1020px;
     position: relative;

@@ -1,25 +1,52 @@
+@use "../../Styles/Partials/variables" as *;
+
 .nav {
-    background-color: lightgray;
+  background-color: $Main-Color;
+  padding-top: 1rem;
+
+  &__container {
+    max-width: 1020px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 0 2rem;
-    &__logo {
-        &-box {
-            margin: 0 3rem;
-        }
-        &-image {
-            border-radius: 0.25rem;
-            height: 3rem;
-            width: 10rem;
-        }
+    // align-items: center;
+  }
+
+  &__logo {
+    &-image {
+      font-size: 3.812rem;
+      font-weight: 500;
+      color: #fff;
+      margin-bottom: 0.2rem;
+      cursor: pointer;
     }
-    &__bar {
-        margin: 0 3rem;
-        display: flex;
-        flex-wrap: nowrap;
-        &--item {
-            padding: 2rem 0.5rem 0 2rem;
-        }
+  }
+  &__bar {
+    margin: 0 3rem;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+    gap: 3rem;
+    align-self: flex-end;
+
+    &--item {
+      color: $Secondary-Color;
+      font-size: 1.1rem;
+      cursor: pointer;
+      padding-bottom: 0.5rem;
+      margin-bottom: 0.5rem;
+      border-bottom: 2px solid transparent;
+      transition: all 0.3s;
+
+      &:hover {
+        color: #fff;
+        border-color: #fff;
+      }
     }
+
+    .active {
+      color: #fff;
+      border-bottom: 2px solid #fff;
+    }
+  }
 }
