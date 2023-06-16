@@ -23,7 +23,7 @@ function HomePage() {
 
       <div className="home-page__category">
         <div className="home-page__category-container"></div>
-        <h2 className="home-page__category-container">Title</h2>
+        <h2 className="home-page__category-title">Title</h2>
       </div>
     </>
   );

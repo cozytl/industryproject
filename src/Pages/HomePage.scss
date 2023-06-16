@@ -34,4 +34,22 @@
     width: 50%;
     padding-left: 5rem;
   }
+
+  &__category {
+    background-color: grey;
+    width: 150px;
+
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: last baseline;
+    align-items: center;
+  }
+
+  &__category-container {
+    height: 150px;
+  }
+  &__category-container {
+    display: inline-block;
+  }
 }
