@@ -1,0 +1,188 @@
+.page {
+  height: 100%;
+  width: 1080px;
+  margin: 2rem auto;
+}
+*,
+body,
+.page {
+  font-family: "manrope", sans-serif;
+}
+
+.prod {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 0 0 1rem 0;
+
+  &__img {
+    //cont
+
+    &--image {
+      width: 20rem;
+    }
+  }
+
+  &__detail {
+    //cont
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  &__name {
+    font-size: 2rem;
+    font-weight: normal;
+    padding: 0 0 0.5rem 0;
+  }
+  &__details {
+    padding: 0.5rem 0;
+    font-size: 1rem;
+    font-weight: 100;
+    line-height: 0.5rem;
+  }
+  &__price {
+    padding: 2rem 0;
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  &__avail {
+    margin: 1rem 1rem 0 0;
+    width: 3rem;
+    height: 3rem;
+    font-weight: 700;
+
+    border-radius: 50%;
+  }
+
+  &__similar {
+    //cont
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    flex-wrap: nowrap;
+  }
+  &__sdetails {
+    flex-wrap: nowrap;
+    font-size: 0.75rem;
+  }
+  &__simg {
+    padding: 0;
+  }
+  &__suggest {
+    width: 9rem;
+  }
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  background-color: #f9f9f9;
+  padding: 1rem 2rem;
+}
+.eco {
+  height: 14rem;
+  display: flex;
+  flex-wrap: wrap;
+
+  &__head {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    height: 4.5rem;
+  }
+  &__title {
+    font-size: 2rem;
+    width: 24rem;
+    font-weight: normal;
+    padding: 0 0 0.55rem 0;
+  }
+  &__cont {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__bubble {
+    width: 10rem;
+    border-radius: 14px;
+    background-color: #a9a9a9;
+    color: white;
+    margin: 0 0.25rem 0 0;
+    font-size: 0.8rem;
+    font-weight: 100;
+    text-align: center;
+  }
+}
+
+.graphs {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  &__meter {
+    background-color: #787878;
+    width: 18rem;
+    height: 15px;
+    border-radius: 10px;
+  }
+  &__sect {
+    width: 40%;
+    margin: 0 0.5rem 0 0;
+  }
+  &__title {
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin: 0.25rem 0;
+  }
+  &__bubble1 {
+    background-color: #2d5748;
+    border-radius: 10px;
+    height: 100%;
+    width: 92%;
+  }
+  &__bubble2 {
+    background-color: #2d5748;
+    border-radius: 10px;
+    height: 100%;
+    width: 98%;
+  }
+  &__bubble3 {
+    background-color: #2d5748;
+    border-radius: 10px;
+    height: 100%;
+    width: 85%;
+  }
+  &__bubble4 {
+    background-color: #2d5748;
+    border-radius: 10px;
+    height: 100%;
+    width: 95%;
+  }
+}
+
+.score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding-right: 2rem;
+  &__bubble {
+    height: 11rem;
+    width: 11rem;
+    background-color: #2d5748;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  &__score {
+    padding: 4rem;
+    font-size: 0.9rem;
+    color: white;
+    font-weight: light;
+    font-weight: 100%;
+  }
+}
+
+.rating {
+  font-size: 2.5rem;
+  font-weight: light;
+}
