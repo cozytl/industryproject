@@ -2,21 +2,18 @@
 @use "../../Styles/partials/fonts" as *;
 @use "../../Styles/partials/global" as *;
 @use "../../Styles/partials/variables" as *;
-
 .formyform {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-
 .searchbar {
   display: flex;
   align-items: center;
   flex-direction: column;
   border: none;
   width: 42px;
-
   &__input {
     width: 50%;
     background-image: url("../../assets/search-24px.svg");
@@ -40,7 +37,25 @@
     flex-direction: column;
     align-items: start;
     padding: 0.25rem 8rem 0.25rem 1.65rem;
-    width: 32rem;
+    width: 42rem;
     background-color: aliceblue;
+    color: #424242;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    &--type {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 19px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
   }
+}
+.search__results {
+  position: absolute;
+  z-index: 3;
+  margin: 2.5rem 0;
 }
